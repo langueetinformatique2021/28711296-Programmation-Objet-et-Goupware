@@ -1,5 +1,10 @@
 package tp4;
-
+/**
+ * 
+ * @author Moses
+ *
+ * entre les valeurs données, trouver le maximum, le munimum et la médiane
+ */
 public class Conditionnelle {
 	
 	public static void main(String [] args) {
@@ -7,7 +12,7 @@ public class Conditionnelle {
 		
 		
 		/**
-		 * obtenir le maximam entre p1,p2,p3
+		 * obtenir le maximum entre p1,p2,p3
 		 * 
 		 */
 		if (p1 > p4) {
@@ -22,7 +27,7 @@ public class Conditionnelle {
 		System.out.println(p4);	
 		
 		/**
-		 * code du prof
+		 * code du professeur
 		 */
 		
 		if (p1 > p2) {
@@ -55,7 +60,7 @@ public class Conditionnelle {
 		System.out.println(p4);	
 		
 		/**
-		 * code du prof
+		 * code du professeur
 		 */
 		
 		if (p1 < p2) {
@@ -87,7 +92,7 @@ public class Conditionnelle {
 		System.out.println(p4);	
 		
 		/**
-		 * code du prof
+		 * code du professeur
 		 */
 		if (p1 > p2) {
 			if (p2 > p3)
