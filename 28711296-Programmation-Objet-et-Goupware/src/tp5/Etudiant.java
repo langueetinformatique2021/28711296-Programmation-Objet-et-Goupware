@@ -29,6 +29,48 @@ public class Etudiant {
 		parcours_ = parcours;
 		
 	}
+	/**
+	 * renvoyer le numero d'etudiant
+	 * @return numero d'etudiant
+	 */
+	public int getNum() {
+		return num_etu_;
+	}
+	/**
+	 * renvoyer le nom d'etudiant
+	 * @return nom d'etudiant
+	 */
+	public String getNom() {
+		return nom_;
+	}
+	/**
+	 * renvoyer le prenom d'etudiant
+	 * @return prenom d'etudiant
+	 */
+	public String getPrenom() {
+		return prenom_;
+	}
+	/**
+	 * changer le numero d'etudiant
+	 * @param num_etu
+	 */
+	public void setNum(int num_etu) {
+		num_etu_=num_etu;
+	}
+	/**
+	 * changer le nom d'etudiant
+	 * @param nom
+	 */
+	public void setNom(String nom) {
+		nom_ = nom;
+	}
+	/**
+	 * changer le prenom d'etudiant
+	 * @param prenom
+	 */
+	public void setPrenom(String prenom) {
+		prenom_ = prenom;
+	}
 	
 
 }

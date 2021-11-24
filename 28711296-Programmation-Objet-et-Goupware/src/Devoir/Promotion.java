@@ -7,35 +7,33 @@ package Devoir;
  *
  */
 public class Promotion {
-	private int Note_;
-	private String Niveau_;
-	private Etudiant Etudiant_;
+	private int note_;
+	private String niveau_;
+	private Etudiant etudiant;
 	
 	/**
 	 * traiter le niveau et le note
 	 * 
 	 * 
-	 * @param num_etu
-	 * @param nom
-	 * @param prenom
-	 * @param parcours
-	 * @param Note
-	 * @param Niveau
+	 *
+	 * @param e
+	 * @param note
+	 * @param niveau
 	 * 
 	 * @return afficher le numero d'etudiant, prenom et le niveau
 	 */
 	
 	
-	public Promotion(int num_etu, String nom, String prenom, String parcours, int Note, String Niveau) {
+	public Promotion(Etudiant e, int note, String niveau) {
 		
-		Etudiant_ = new Etudiant(num_etu, nom, prenom, parcours);
-		Note_ = Note;
-		Niveau_ = Niveau;
-		if (Verifier(Note_)) {
+		etudiant = e;
+		note_ = note;
+		niveau_ = niveau;
+		if (Verifier(note_)) {
 			Promoted();
-			System.out.println("Numero Etudiant :" + num_etu);
-			System.out.println("Prenom :" + prenom);
-			System.out.println("Promoted to " + Niveau_);
+			System.out.println("Numero Etudiant :" + e.getNum());
+			System.out.println("Prenom :" + e.getPrenom());
+			System.out.println("Promoted to " + niveau_);
 			}
 
 	}
@@ -61,13 +59,13 @@ public class Promotion {
 	 */
 	
 	private void Promoted() {
-		if (Niveau_ == "L1") {Niveau_ = "L2";}
+		if (niveau_ == "L1") {niveau_ = "L2";}
 		else {
-			if (Niveau_ == "L2") {Niveau_ = "L3";}
+			if (niveau_ == "L2") {niveau_ = "L3";}
 			else {
-				if (Niveau_ == "L3") {Niveau_ = "M1";}
+				if (niveau_ == "L3") {niveau_ = "M1";}
 				else {
-					if (Niveau_ == "M1") {Niveau_ = "M2";}
+					if (niveau_ == "M1") {niveau_ = "M2";}
 				}
 			}
 		}
