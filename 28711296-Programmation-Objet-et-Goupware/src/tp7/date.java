@@ -16,6 +16,7 @@ public class date {
 		System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
 		System.out.println(calendar.get(Calendar.HOUR_OF_DAY));
 		System.out.println(calendar.get(Calendar.MINUTE));
+		System.out.println(calendar.get(Calendar.DAY_OF_WEEK));
 
 	}
 

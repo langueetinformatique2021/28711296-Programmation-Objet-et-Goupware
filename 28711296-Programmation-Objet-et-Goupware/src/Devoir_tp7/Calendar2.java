@@ -1,15 +1,27 @@
-package tp7;
+package Devoir_tp7;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-
+/**
+ * 
+ * @author Moses
+ *
+ */
 public class Calendar2 extends Calendar{
+	
+	/**
+	 * attribut cours (type boolean)
+	 */
 	
 	public boolean cours;
 	Calendar calendar = new GregorianCalendar();
 	Date trialTime = new Date();
-	
+
+	/**vérifier si c'est créé pendant le cours. 
+	 * boolean cours est True, si c'est créé pendant le cours(jeudi 9:30-12)
+	 * cours est False, si non
+	 */
 	public Calendar2() {
 		calendar.setTime(trialTime);
 		if (calendar.get(Calendar.DAY_OF_WEEK) == 5) {
@@ -24,6 +36,8 @@ public class Calendar2 extends Calendar{
 		else {this.cours = false;}
 	}
 	
+	/**Afficher la date et l'heure de la création de l'objet
+	 */
 	public void creation() {
 		System.out.print(calendar.get(Calendar.YEAR) + " / ");
 		System.out.print(calendar.get(Calendar.MONTH) + " / ");
@@ -33,6 +47,9 @@ public class Calendar2 extends Calendar{
 		System.out.println(calendar.get(Calendar.SECOND));
 		}
 	
+	/**Afficher la date et l'heure courante
+	 * 
+	 */
 	public void afficher() {
 		Calendar calendar_courant = new GregorianCalendar();
 		System.out.print(calendar_courant.get(Calendar.YEAR) + " / ");
@@ -44,6 +61,9 @@ public class Calendar2 extends Calendar{
 		
 	}
 	
+	/**
+	 * Calculer le nombre de secondes depuis la création de l'objet
+	 */
 	public void duree() {
 		Calendar calendar_ = new GregorianCalendar();
 
